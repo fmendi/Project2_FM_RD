@@ -245,13 +245,7 @@ def populateDatabase():
     print('\b\b\b\b', end="")
     print("100%\nDatabase population complete.")
     
-    #retriving all values
-    cur = database.cursor()
-    iter = cur.first()
-    while iter:
-        print (iter[0].decode("utf-8"))
-        print(iter[1].decode("utf-8"))
-        iter = cur.next()
+    
     
 def indexFunc(primarykey, primarydata):
     return primarydata
